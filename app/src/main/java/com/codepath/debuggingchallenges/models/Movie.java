@@ -1,5 +1,7 @@
 package com.codepath.debuggingchallenges.models;
 
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -38,6 +40,7 @@ public class Movie {
                 e.printStackTrace();
             }
         }
+        Log.d("Movie.java", results.get(0).getTitle());
         return results;
     }
 }
